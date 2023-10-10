@@ -23,6 +23,7 @@ void tud_thread(MainEnvironement_t *MainEnvironement) {
 	tusb_init();
 
 	while (true) {
+		// XXX tasking by freertos does not work
 		tud_task();
 		vTaskDelay(1); // let it yield
 	}

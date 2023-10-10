@@ -5,6 +5,7 @@
 #define CFG_TUSB_MCU OPT_MCU_RP2040
 
 // warning redifined
+// XXX automatic usage of freertos does not work
 //#define CFG_TUSB_OS  OPT_OS_FREERTOS
 
 #define BOARD_TUD_RHPORT      0

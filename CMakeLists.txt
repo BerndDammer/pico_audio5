@@ -79,10 +79,10 @@ target_include_directories(pico_audio5 PRIVATE
 # Add any user requested libraries
 target_link_libraries(pico_audio5
     pico_stdlib
-    hardware_spi
+#    hardware_spi
     hardware_timer
     hardware_clocks
-    hardware_pwm
+#    hardware_pwm
     FreeRTOS-Kernel-Heap4
     tinyusb_device
 )

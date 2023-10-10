@@ -22,7 +22,7 @@ void tud_midi_rx_cb(uint8_t itf)
 	{
 		if (tud_midi_packet_read(packet))
 		{
-			printf("%0X02H %0x02H %0X02H %0x02H\n", //
+			printf("%02X %02X %02X %02X\n", //
 					packet[0], packet[1], packet[2], packet[3]);
 		}
 		else
